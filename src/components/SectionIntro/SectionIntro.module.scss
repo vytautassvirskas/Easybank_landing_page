@@ -1,0 +1,29 @@
+@import "../../assets/sass/variables.scss";
+.section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 150px;
+  height: 600px;
+  background-color: $c-ne-very-light-Gray;
+  background-image: url("../../assets/images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 126%;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+  }
+  &__heading {
+    font-size: 60px;
+    color: $c-pr-dark-blue;
+  }
+  &__text {
+    color: $c-ne-grayish-blue;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+  }
+}

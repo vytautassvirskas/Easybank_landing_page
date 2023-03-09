@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Header.module.scss";
 import companyLogo from "../../assets/images/logo.svg";
-import ButtonWrapper from "../ButtonLink/ButtonLink";
+import ButtonLink from "../ButtonLink/ButtonLink";
 
 const Header = (): JSX.Element => {
   const navNames: string[] = ["Home", "About", "Contact", "Blog", "Careers"];
@@ -21,7 +21,7 @@ const Header = (): JSX.Element => {
           )}
         </ul>
       </nav>
-      <ButtonWrapper>Request Invite</ButtonWrapper>
+      <ButtonLink>Request Invite</ButtonLink>
     </header>
   );
 };

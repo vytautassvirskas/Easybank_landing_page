@@ -2,8 +2,11 @@
 
 .header {
   @include flexSpaceBtwn;
-  max-width: 62.5rem;
+  position: relative;
+  z-index: 2;
+  padding: 0 150px;
   margin: 0 auto;
+  background-color: $c-ne-white;
 }
 
 .nav {

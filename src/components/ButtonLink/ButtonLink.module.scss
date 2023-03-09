@@ -1,5 +1,6 @@
 @import "../../assets/sass/variables.scss";
 .btn {
+  width: fit-content;
   padding: 0.9375rem 2.1875rem;
   border-radius: 30px;
   background: linear-gradient(to right, $c-pr-lime-green, $c-pr-bright-cyan);
