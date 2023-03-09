@@ -1,9 +1,10 @@
 import style from "./App.module.scss";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className={style.div}>
-      <p>Click on the Vite and React logos to learn more</p>
+    <div className={style.app}>
+      <Header></Header>
     </div>
   );
 }
