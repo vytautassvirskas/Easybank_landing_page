@@ -1,0 +1,55 @@
+/* -------------------- */
+/*     current theme    */
+/* -------------------- */
+
+/* Primary colors */
+
+$c-pr-dark-blue: rgb(45, 49, 77);
+$c-pr-lime-green: rgb(49, 211, 92);
+$c-pr-bright-cyan: rgb(43, 183, 218);
+
+/* Neutral colors */
+$c-ne-grayish-blue: rgb(150, 152, 166);
+$c-ne-light-grayish-blue: rgb(243, 244, 246);
+$c-ne-very-light-Gray: rgb(250, 250, 250);
+$c-ne-white: rgb(255, 255, 255);
+
+/*    FONTS    */
+/*font family*/
+$ff-primary: "Public Sans", sans-serif;
+
+/*font-size*/
+$fs-primary: 1.125rem;
+$fs-button: 0.875rem;
+$fs-task-mobile: 14px;
+
+/*font weight*/
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+/* responsive */
+$rd-mobile: 768px;
+
+/*    mixin   */
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexSpaceBtwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*animations*/
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
