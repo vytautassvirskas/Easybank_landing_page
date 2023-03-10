@@ -2,6 +2,8 @@
 /*     current theme    */
 /* -------------------- */
 
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
 /* Primary colors */
 
 $c-pr-dark-blue: rgb(45, 49, 77);
@@ -19,7 +21,7 @@ $c-ne-white: rgb(255, 255, 255);
 $ff-primary: "Public Sans", sans-serif;
 
 /*font-size*/
-$fs-primary: 1.125rem;
+$fs-primary: 1.125rem; //18px
 $fs-button: 0.875rem;
 $fs-task-mobile: 14px;
 
@@ -42,6 +44,16 @@ $rd-mobile: 768px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin headingStylePrimary {
+  color: $c-pr-dark-blue;
+}
+
+@mixin textStylePrimary {
+  color: $c-ne-grayish-blue;
+  font-size: $fs-primary;
+  line-height: 1.5;
 }
 
 /*animations*/

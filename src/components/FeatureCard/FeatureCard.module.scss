@@ -1,0 +1,17 @@
+@import "../../assets/sass/variables.scss";
+.card {
+  $margin-size: 1.5625rem;
+  width: 25%;
+  min-width: 15rem;
+
+  &__heading {
+    @include headingStylePrimary;
+    font-size: 1.75rem;
+    margin: 1.5625rem 0;
+  }
+  &__text {
+    @include textStylePrimary;
+    font-size: 1rem;
+    margin-right: 0.625rem;
+  }
+}

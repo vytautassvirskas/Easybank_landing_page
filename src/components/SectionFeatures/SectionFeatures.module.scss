@@ -1,6 +1,23 @@
 @import "../../assets/sass/variables.scss";
 
 .section {
-  height: 800px;
-  background-color: tomato;
+  padding: 6.25rem 0;
+  background-color: rgb(243, 244, 246);
+
+  &__heading {
+    @include headingStylePrimary;
+    font-size: 2.25rem;
+    margin-bottom: 1.5625rem;
+  }
+  &__text {
+    @include textStylePrimary;
+    max-width: 50%;
+    margin-bottom: 3.125rem;
+  }
+  &__features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem 0;
+  }
 }
