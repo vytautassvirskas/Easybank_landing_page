@@ -1,0 +1,28 @@
+@import "../../assets/sass/variables.scss";
+
+.article {
+  background-color: $c-ne-white;
+  padding: 25px;
+  $margin-size: 1.5625rem;
+  width: 25%;
+  min-width: 15rem;
+  border-radius: 8px;
+  &__img {
+    width: calc(100% + 15px);
+  }
+  &__author {
+    @include textStylePrimary;
+    font-size: 0.6rem;
+    margin-top: 30px;
+  }
+  &__heading {
+    @include headingStylePrimary;
+    font-size: 22px;
+    margin: 1rem 0;
+  }
+  &__text {
+    @include textStylePrimary;
+    font-size: 0.8rem;
+    margin-right: 0.625rem;
+  }
+}

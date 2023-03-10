@@ -43,7 +43,6 @@ const SectionFeatures = (): JSX.Element => {
   return (
     <section className={style.section}>
       <MainWrapper>
-        {/* <div className={style["section__wrapper"]}> */}
         <h2 className={style["section__heading"]}>Why choose Easybank?</h2>
         <p className={style["section__text"]}>
           We leverage Open Banking to turn your bank account into your financial
@@ -54,7 +53,6 @@ const SectionFeatures = (): JSX.Element => {
             <FeatureCard key={card.title} data={card}></FeatureCard>
           ))}
         </div>
-        {/* </div> */}
       </MainWrapper>
     </section>
   );

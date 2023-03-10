@@ -1,8 +1,7 @@
 @import "../../assets/sass/variables.scss";
-
 .section {
   padding: 6.25rem 0;
-  background-color: $c-ne-light-grayish-blue;
+  background-color: $c-ne-very-light-Gray;
 
   &__heading {
     @include headingStylePrimary;
@@ -14,7 +13,7 @@
     max-width: 50%;
     margin-bottom: 3.125rem;
   }
-  &__features-wrapper {
+  &__articles-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
