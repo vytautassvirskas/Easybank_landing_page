@@ -14,9 +14,9 @@
     margin-bottom: 3.125rem;
   }
   &__articles-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem 0;
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
   }
 }

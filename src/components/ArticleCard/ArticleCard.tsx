@@ -11,7 +11,7 @@ const ArticleCard = ({ article }: ArticlesDataProps) => {
   return (
     <article className={style.article}>
       <img src={article.img} alt="icon" className={style["article__img"]} />
-      <div>
+      <div className={style["article__text-wrapper"]}>
         <address className={style["article__author"]}>{article.author}</address>
         <h4 className={style["article__heading"]}>{article.title}</h4>
         <p className={style["article__text"]}>{article.text}</p>
