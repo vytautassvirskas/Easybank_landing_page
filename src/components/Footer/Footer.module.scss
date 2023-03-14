@@ -1,0 +1,43 @@
+@import "../../assets/sass/variables.scss";
+
+.footer {
+  background-color: $c-pr-dark-blue;
+  &__social-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 6.25rem;
+  }
+  .nav {
+    height: 100%;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      gap: 0.9375rem 6.25rem;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $c-ne-light-grayish-blue;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $c-pr-lime-green;
+      }
+    }
+  }
+  &__copyright-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: auto;
+  }
+  &__copyright {
+    color: $c-ne-grayish-blue;
+  }
+}

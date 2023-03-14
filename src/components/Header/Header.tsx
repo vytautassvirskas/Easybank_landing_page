@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./Header.module.scss";
-import companyLogo from "../../assets/images/logo.svg";
-import ButtonLink from "../ButtonLink/ButtonLink";
+import ButtonLink from "../atoms/ButtonLink/ButtonLink";
 import MainWrapper from "../MainWrapper/MainWrapper";
+import CompanyLogo from "../atoms/CompanyLogo/CompanyLogo";
 
 const Header = (): JSX.Element => {
   const navNames: string[] = ["Home", "About", "Contact", "Blog", "Careers"];
@@ -16,7 +16,7 @@ const Header = (): JSX.Element => {
         }}
       >
         <>
-          <img src={companyLogo} alt="company-logo" />
+          <CompanyLogo></CompanyLogo>
           <nav className={style.nav}>
             <ul className={style["nav__list"]}>
               {navNames.map(

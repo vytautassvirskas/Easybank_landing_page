@@ -6,12 +6,17 @@
   min-width: 15rem;
   border-radius: 8px;
   overflow: hidden;
+  transition: scale 0.2s ease-in-out;
+  &:hover {
+    scale: 1.05;
+  }
   &__img {
-    height: 200px;
-    width: calc(100% + 15px);
+    height: 12.5rem;
+    width: 100%;
+    object-fit: cover;
   }
   &__text-wrapper {
-    padding: 25px;
+    padding: 1.5625rem;
   }
   &__author {
     @include textStylePrimary;
@@ -19,7 +24,7 @@
   }
   &__heading {
     @include headingStylePrimary;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin: 1rem 0;
     cursor: pointer;
     transition: color 0.2s ease-in-out;

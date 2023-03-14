@@ -7,7 +7,7 @@ interface ArticlesDataProps {
   article: ArticlesData;
 }
 
-const ArticleCard = ({ article }: ArticlesDataProps) => {
+const ArticleCard = ({ article }: ArticlesDataProps): JSX.Element => {
   return (
     <article className={style.article}>
       <img src={article.img} alt="icon" className={style["article__img"]} />

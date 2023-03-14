@@ -1,13 +1,15 @@
 import React from "react";
 import style from "./SectionIntro.module.scss";
-import ButtonLink from "../ButtonLink/ButtonLink";
+import ButtonLink from "../atoms/ButtonLink/ButtonLink";
 import SectionIntroimg from "../../assets/images/image-mockups.png";
 import MainWrapper from "../MainWrapper/MainWrapper";
 
 const SectionIntro = (): JSX.Element => {
   return (
     <section className={style.section}>
-      <MainWrapper style={{ display: "flex", alignItems: "center", height: "100%" }}>
+      <MainWrapper
+        style={{ display: "flex", alignItems: "center", height: "100%" }}
+      >
         <div className={style["section__text-wrapper"]}>
           <h1 className={style["section__heading"]}>
             Next generation digital banking
