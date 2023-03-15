@@ -21,7 +21,6 @@ const Footer = (): JSX.Element => {
         style={{
           display: "flex",
           alignItems: "center",
-          //   justifyContent: "space-between",
           height: "220px",
           padding: "60px 40px",
         }}
