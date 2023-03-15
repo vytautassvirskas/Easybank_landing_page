@@ -26,7 +26,7 @@ const Footer = (): JSX.Element => {
             {navNames.map(
               (item: string): React.ReactNode => (
                 <li className={style["nav__item"]} key={item}>
-                  <a href="#" className={style["nav__link"]}>
+                  <a href="/" className={style["nav__link"]}>
                     {item}
                   </a>
                 </li>

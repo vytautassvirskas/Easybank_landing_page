@@ -7,7 +7,11 @@ const SocialNetworksList = () => {
     <ul className={style["social-network"]}>
       {/* facebook icon */}
       <li className={style["social-network__item"]}>
-        <a href="#" className={style["social-network__link"]}>
+        <a
+          href="/"
+          className={style["social-network__link"]}
+          aria-label="Visit us on Facebook"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -20,7 +24,11 @@ const SocialNetworksList = () => {
       </li>
       {/* youtube icon */}
       <li className={style["social-network__item"]}>
-        <a href="#" className={style["social-network__link"]}>
+        <a
+          href="/"
+          className={style["social-network__link"]}
+          aria-label="Visit us on Youtube"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"
@@ -33,7 +41,11 @@ const SocialNetworksList = () => {
       </li>
       {/* twitter icon */}
       <li className={style["social-network__item"]}>
-        <a href="#" className={style["social-network__link"]}>
+        <a
+          href="/"
+          className={style["social-network__link"]}
+          aria-label="Visit us on Twitter"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"
@@ -46,7 +58,11 @@ const SocialNetworksList = () => {
       </li>
       {/* pinterest icon */}
       <li className={style["social-network__item"]}>
-        <a href="#" className={style["social-network__link"]}>
+        <a
+          href="/"
+          className={style["social-network__link"]}
+          aria-label="Visit us on Pinterest"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -59,7 +75,11 @@ const SocialNetworksList = () => {
       </li>
       {/* instagram icon */}
       <li className={style["social-network__item"]}>
-        <a href="#" className={style["social-network__link"]}>
+        <a
+          href="/"
+          className={style["social-network__link"]}
+          aria-label="Visit us on Instagram"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"

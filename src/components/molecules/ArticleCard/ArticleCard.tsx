@@ -13,7 +13,7 @@ const ArticleCard = ({ article }: ArticlesDataProps): JSX.Element => {
       <img src={article.img} alt="icon" className={style["article__img"]} />
       <div className={style["article__text-wrapper"]}>
         <address className={style["article__author"]}>{article.author}</address>
-        <h4 className={style["article__heading"]}>{article.title}</h4>
+        <h3 className={style["article__heading"]}>{article.title}</h3>
         <p className={style["article__text"]}>{article.text}</p>
       </div>
     </article>
