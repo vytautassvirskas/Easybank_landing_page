@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./FeatureCard.module.scss";
-import { CardData } from "../SectionFeatures/SectionFeatures";
+import { CardData } from "../../organisms/SectionFeatures/SectionFeatures";
 
 interface FeatureCardProps {
   key: string;

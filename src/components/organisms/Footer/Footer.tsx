@@ -1,8 +1,7 @@
 import React from "react";
-import ButtonLink from "../atoms/ButtonLink/ButtonLink";
-import CompanyLogo from "../atoms/CompanyLogo/CompanyLogo";
-import MainWrapper from "../MainWrapper/MainWrapper";
-import SocialNetworksList from "../SocialNetworksList/SocialNetworksList";
+import ButtonLink from "../../atoms/ButtonLink/ButtonLink";
+import CompanyLogo from "../../atoms/CompanyLogo/CompanyLogo";
+import SocialNetworksList from "../../molecules/SocialNetworksList/SocialNetworksList";
 import style from "./Footer.module.scss";
 
 const Footer = (): JSX.Element => {
@@ -17,14 +16,7 @@ const Footer = (): JSX.Element => {
 
   return (
     <footer className={style.footer}>
-      <MainWrapper
-        style={{
-          display: "flex",
-          alignItems: "center",
-          height: "220px",
-          padding: "60px 40px",
-        }}
-      >
+      <div className={style["footer__footer-wrapper"]}>
         <div className={style["footer__social-wrapper"]}>
           <CompanyLogo color={"rgb(255, 255, 255)"}></CompanyLogo>
           <SocialNetworksList></SocialNetworksList>
@@ -44,11 +36,11 @@ const Footer = (): JSX.Element => {
         </nav>
         <div className={style["footer__copyright-wrapper"]}>
           <ButtonLink>Request Invite</ButtonLink>
-          <span className={style["footer__copyright"]}>
+          <small className={style["footer__copyright"]}>
             &copy; Easynbank. All right Reserved
-          </span>
+          </small>
         </div>
-      </MainWrapper>
+      </div>
     </footer>
   );
 };

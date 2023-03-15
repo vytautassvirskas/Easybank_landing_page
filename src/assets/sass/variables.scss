@@ -31,7 +31,9 @@ $fw-regular: 400;
 $fw-bold: 700;
 
 /* responsive */
-$rd-mobile: 768px;
+$rd-mobile-767: 767px;
+$rd-mobile-1000: 1000px;
+$rd-mobile-1300: 1300px;
 
 /*    mixin   */
 @mixin flexCenter {
@@ -54,6 +56,11 @@ $rd-mobile: 768px;
   color: $c-ne-grayish-blue;
   font-size: $fs-primary;
   line-height: 1.5;
+}
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 40px;
 }
 
 /*animations*/

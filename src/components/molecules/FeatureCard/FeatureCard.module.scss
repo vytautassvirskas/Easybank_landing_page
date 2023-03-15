@@ -1,0 +1,35 @@
+@import "../../../assets/sass/variables.scss";
+.card {
+  $margin-size: 1.5625rem;
+  flex-basis: 25%;
+  @media (width <=$rd-mobile-1300) {
+    flex-basis: 35%;
+    &:not(:nth-child(even)) {
+      margin-right: 1.5625rem;
+    }
+  }
+  @media (width <=$rd-mobile-767) {
+    flex-basis: 100%;
+    max-width: 400px;
+    &:not(:nth-child(even)) {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    @media (width <=$rd-mobile-1300) {
+      margin: 0 auto;
+    }
+  }
+
+  &__heading {
+    @include headingStylePrimary;
+    font-size: 1.75rem;
+    margin: 1.5625rem 0;
+  }
+  &__text {
+    @include textStylePrimary;
+    font-size: 1rem;
+    margin-right: 0.625rem;
+  }
+}

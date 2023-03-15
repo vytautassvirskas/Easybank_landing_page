@@ -1,0 +1,65 @@
+@import "../../../assets/sass/variables.scss";
+.section {
+  //variables
+  $text-max-width: 31.25rem;
+  //css rules
+  position: relative;
+  background: $c-ne-very-light-Gray
+    url("../../assets/images/bg-intro-desktop.svg") calc(100% + 18.75rem) /
+    75rem auto no-repeat;
+  transition: all 0.2s ease-in-out;
+
+  @media (width <=1300px) {
+    background-size: 46.875rem auto;
+    background-position: calc(100% + 12.5rem);
+  }
+  @media (width <=$rd-mobile-1000) {
+    background-position: 50% -21.875rem;
+  }
+
+  &__section-wrapper {
+    @include wrapper;
+    padding: 5rem 2.5rem;
+    @media (width <=$rd-mobile-1000) {
+      text-align: center;
+      padding: 16.25rem 2.5rem 3.75rem;
+    }
+  }
+
+  &__heading {
+    font-size: 3.75rem;
+    @include headingStylePrimary;
+    max-width: $text-max-width;
+    margin-bottom: 1.875rem;
+    @media (width <=$rd-mobile-1000) {
+      max-width: unset;
+      font-size: 2.375rem;
+    }
+  }
+  &__text {
+    @include textStylePrimary;
+    max-width: $text-max-width;
+    margin-bottom: 1.875rem;
+    @media (width <=$rd-mobile-1000) {
+      max-width: unset;
+    }
+  }
+  &__img {
+    height: 50rem;
+    position: absolute;
+    right: -5%;
+    top: -40%;
+    transition: all 0.2s ease-in-out;
+    @media (width <=1300px) {
+      height: 34.375rem;
+      top: 0;
+    }
+    @media (width <=$rd-mobile-1000) {
+      height: 21.875rem;
+      top: -15%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,19 +1,37 @@
-@import "../../assets/sass/variables.scss";
+@import "../../../assets/sass/variables.scss";
 
 .article {
   background-color: $c-ne-white;
   $margin-size: 1.5625rem;
-  min-width: 15rem;
+  flex-basis: calc(25% - 20px);
   border-radius: 8px;
   overflow: hidden;
   transition: scale 0.2s ease-in-out;
   &:hover {
     scale: 1.05;
   }
+
+  @media (width <=$rd-mobile-1300) {
+    flex-basis: 35%;
+    &:not(:nth-child(even)) {
+      margin-right: 1.5625rem;
+    }
+  }
+  @media (width <=$rd-mobile-767) {
+    flex-basis: 100%;
+    max-width: 400px;
+    &:not(:nth-child(even)) {
+      margin-right: 0;
+    }
+  }
+
   &__img {
     height: 12.5rem;
     width: 100%;
     object-fit: cover;
+    @media (width <=$rd-mobile-767) {
+      height: 14rem;
+    }
   }
   &__text-wrapper {
     padding: 1.5625rem;

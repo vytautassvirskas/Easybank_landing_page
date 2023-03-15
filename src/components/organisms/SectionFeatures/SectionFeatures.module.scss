@@ -1,8 +1,14 @@
-@import "../../assets/sass/variables.scss";
+@import "../../../assets/sass/variables.scss";
 
 .section {
   padding: 6.25rem 0;
   background-color: $c-ne-light-grayish-blue;
+  @media (width <=$rd-mobile-1300) {
+    text-align: center;
+  }
+  &__section-wrapper {
+    @include wrapper;
+  }
 
   &__heading {
     @include headingStylePrimary;
@@ -13,6 +19,10 @@
     @include textStylePrimary;
     max-width: 50%;
     margin-bottom: 3.125rem;
+    @media (width <=$rd-mobile-1300) {
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
   }
   &__features-wrapper {
     display: flex;

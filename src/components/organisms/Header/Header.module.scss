@@ -1,0 +1,84 @@
+@import "../../../assets/sass/variables.scss";
+
+.header {
+  background-color: $c-ne-white;
+  position: relative;
+  z-index: 2;
+  &__overlay {
+    display: none;
+    @media (width <=$rd-mobile-767) {
+      display: block;
+      background-image: linear-gradient($c-pr-dark-blue, transparent);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 4.375rem;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  &__header-wrapper {
+    @include wrapper;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (width <=$rd-mobile-767) {
+      position: relative;
+      z-index: 100;
+      padding: 1.25rem;
+      background-color: inherit;
+    }
+  }
+
+  .nav {
+    @media (width <=$rd-mobile-767) {
+      position: absolute;
+      z-index: 50;
+      top: 6.25rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 25rem;
+      margin: auto;
+      padding: 1.875rem;
+      text-align: center;
+      background-color: $c-ne-white;
+      border-radius: 8px;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+    &__list {
+      display: flex;
+      @media (width <=$rd-mobile-767) {
+        display: block;
+      }
+    }
+    &__item {
+      padding: 0.625rem 0;
+      &:not(:last-child) {
+        margin-right: 0.9375rem;
+        @media (width <=$rd-mobile-767) {
+          margin-right: 0;
+        }
+      }
+    }
+    &__link {
+      text-decoration: none;
+      color: $c-pr-dark-blue;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: $c-pr-lime-green;
+      }
+    }
+    &--open {
+      opacity: 1;
+    }
+  }
+
+  &__btn-wrapper {
+    @media (width <=$rd-mobile-767) {
+      display: none;
+    }
+  }
+}

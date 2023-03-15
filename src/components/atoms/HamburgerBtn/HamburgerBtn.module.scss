@@ -1,0 +1,49 @@
+@import "../../../assets/sass/variables.scss";
+.hamburger {
+  display: none;
+
+  @media (width<=$rd-mobile-767) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .header__hamburger-dash {
+    height: 2px;
+    width: 30px;
+    background-color: $c-ne-grayish-blue;
+    transition: all 0.2s ease-in-out;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      background-color: $c-ne-grayish-blue;
+      transition: all 0.2s ease-in-out;
+    }
+    &::before {
+      transform: translateY(-12px);
+    }
+    &::after {
+      transform: translateY(12px);
+    }
+  }
+  &--open {
+    .header__hamburger-dash {
+      transform: translateX(-50px);
+      background-color: transparent;
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }
+  }
+}

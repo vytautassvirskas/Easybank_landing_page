@@ -1,11 +1,9 @@
-import React from "react";
-import MainWrapper from "../MainWrapper/MainWrapper";
 import style from "./SectionArticles.module.scss";
-import MoneyImg from "../../assets/images/image-currency.jpg";
-import RestaurantImg from "../../assets/images/image-restaurant.jpg";
-import PlaneImg from "../../assets/images/image-plane.jpg";
-import ConfettiImg from "../../assets/images/image-confetti.jpg";
-import ArticleCard from "../ArticleCard/ArticleCard";
+import MoneyImg from "../../../assets/images/image-currency.jpg";
+import RestaurantImg from "../../../assets/images/image-restaurant.jpg";
+import PlaneImg from "../../../assets/images/image-plane.jpg";
+import ConfettiImg from "../../../assets/images/image-confetti.jpg";
+import ArticleCard from "../../molecules/ArticleCard/ArticleCard";
 
 export interface ArticlesData {
   img: string;
@@ -47,14 +45,14 @@ const SectionArticles = (): JSX.Element => {
   ];
   return (
     <section className={style.section}>
-      <MainWrapper>
+      <div className={style["section__section-wrapper"]}>
         <h2 className={style["section__heading"]}>Latest Articles</h2>
         <div className={style["section__articles-wrapper"]}>
           {articlesData.map((article) => (
             <ArticleCard key={article.title} article={article}></ArticleCard>
           ))}
         </div>
-      </MainWrapper>
+      </div>
     </section>
   );
 };

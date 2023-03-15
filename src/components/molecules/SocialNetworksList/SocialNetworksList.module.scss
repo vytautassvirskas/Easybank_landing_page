@@ -1,8 +1,10 @@
-@import "../../assets/sass/variables.scss";
+@import "../../../assets/sass/variables.scss";
 .social-network {
   display: flex;
   &__item {
-    margin-right: 0.9375rem;
+    &:not(:last-child) {
+      margin-right: 0.9375rem;
+    }
   }
   &__link {
     path {

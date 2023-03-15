@@ -1,11 +1,9 @@
-import React from "react";
-import FeatureCard from "../FeatureCard/FeatureCard";
+import FeatureCard from "../../molecules/FeatureCard/FeatureCard";
 import style from "./SectionFeatures.module.scss";
-import IconOnline from "../../assets/images/icon-online.svg";
-import IconBudgeting from "../../assets/images/icon-budgeting.svg";
-import IconOnboarding from "../../assets/images/icon-onboarding.svg";
-import IconApi from "../../assets/images/icon-api.svg";
-import MainWrapper from "../MainWrapper/MainWrapper";
+import IconOnline from "../../../assets/images/icon-online.svg";
+import IconBudgeting from "../../../assets/images/icon-budgeting.svg";
+import IconOnboarding from "../../../assets/images/icon-onboarding.svg";
+import IconApi from "../../../assets/images/icon-api.svg";
 
 export interface CardData {
   img: string;
@@ -42,7 +40,7 @@ const SectionFeatures = (): JSX.Element => {
   ];
   return (
     <section className={style.section}>
-      <MainWrapper>
+      <div className={style["section__section-wrapper"]}>
         <h2 className={style["section__heading"]}>Why choose Easybank?</h2>
         <p className={style["section__text"]}>
           We leverage Open Banking to turn your bank account into your financial
@@ -53,7 +51,7 @@ const SectionFeatures = (): JSX.Element => {
             <FeatureCard key={card.title} data={card}></FeatureCard>
           ))}
         </div>
-      </MainWrapper>
+      </div>
     </section>
   );
 };

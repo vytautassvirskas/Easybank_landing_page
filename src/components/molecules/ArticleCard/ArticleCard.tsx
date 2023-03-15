@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./ArticleCard.module.scss";
-import { ArticlesData } from "../SectionArticles/SectionArticles";
+import { ArticlesData } from "../../organisms/SectionArticles/SectionArticles";
 
 interface ArticlesDataProps {
   key: string;
