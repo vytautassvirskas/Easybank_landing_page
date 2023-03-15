@@ -31,6 +31,7 @@
   }
 
   .nav {
+    $nav-padding: 2.5rem;
     @media (width <=$rd-mobile-767) {
       position: absolute;
       z-index: 50;
@@ -55,7 +56,11 @@
       }
     }
     &__item {
-      padding: 0.625rem 0;
+      padding: $nav-padding 0;
+      @media (width <=$rd-mobile-767) {
+        margin-right: 0;
+        padding: 0.9375rem 0;
+      }
       &:not(:last-child) {
         margin-right: 0.9375rem;
         @media (width <=$rd-mobile-767) {
@@ -65,10 +70,31 @@
     }
     &__link {
       text-decoration: none;
-      color: $c-pr-dark-blue;
+      color: $c-ne-grayish-blue;
+      padding: $nav-padding 0;
+      border-bottom: 4px solid;
+      border-image: linear-gradient(transparent, transparent) 4;
       transition: all 0.2s ease-in-out;
+      @media (width <=$rd-mobile-767) {
+        padding: 0;
+        border-image: none;
+        border: none;
+      }
+
       &:hover {
-        color: $c-pr-lime-green;
+        color: $c-pr-dark-blue;
+        border-bottom: 4px solid;
+        border-image: linear-gradient(
+            to right,
+            $c-pr-lime-green,
+            $c-pr-bright-cyan
+          )
+          4;
+        @media (width <=$rd-mobile-767) {
+          border-image: none;
+          border: none;
+          color: $c-pr-lime-green;
+        }
       }
     }
     &--open {
